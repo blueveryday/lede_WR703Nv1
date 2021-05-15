@@ -1,4 +1,4 @@
 #!/bin/bash
 
-git clone "https://github.com/immortalwrt/immortalwrt.git" --branch "openwrt-18.06" --single-branch "immortalwrt"
-pushd "immortalwrt"; ./scripts/feeds update -a; ./scripts/feeds install -a; popd
+git clone "https://gitee.com/blueveryday/lede.git"
+pushd "lede"; ./scripts/feeds update -a; ./scripts/feeds install -a; popd
