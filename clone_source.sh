@@ -12,4 +12,6 @@ sed -i 's/#//g' feeds.conf.default
 
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowSocksR Plus+出国软件
 
-pushd "lede"; ./scripts/feeds update -a -f; ./scripts/feeds install -a -f; popd
+#pushd "lede"; 
+
+./scripts/feeds update -a -f; ./scripts/feeds install -a -f; popd
