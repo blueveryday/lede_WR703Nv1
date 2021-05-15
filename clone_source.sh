@@ -14,4 +14,5 @@ sed -i 's/#//g' feeds.conf.default
 
 #pushd "lede"; 
 
-./scripts/feeds update -a -f; ./scripts/feeds install -a -f; popd
+./scripts/feeds update -a -f; ./scripts/feeds install -a -f
+#; popd
