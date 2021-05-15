@@ -1,5 +1,4 @@
 #!/bin/bash
 
 git clone "https://gitee.com/blueveryday/lede.git"
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-pushd "lede"; ./scripts/feeds update -a; ./scripts/feeds install -a; popd
+pushd "lede"; ./scripts/feeds update -a -f; ./scripts/feeds install -a -f; popd
