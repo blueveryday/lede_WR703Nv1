@@ -4,6 +4,7 @@ git clone "https://github.com/coolsnowwolf/lede.git"
 
 pushd "lede"; 
 
+git reset --hard e2535799fbfa1806694a5c5699f1bbe842868771
 sed -i -e 's/192.168.1.1/192.168.3.1/g' -e 's/OpenWrt/TPLink_WR703Nv1/g' package/base-files/files/bin/config_generate  #修改路由器管理IP地址和主机名
 sed -i '343s/4/16/g' target/linux/ar71xx/image/tiny-tp-link.mk  #修改wr703nv1的编译固件大小
 sed -i -e 's/OpenWrt/TPLink_WR703Nv1/g' -e 's/encryption=none/encryption=psk2/g' -e '/psk2/a\			set wireless.default_radio${devidx}.key=password' package/kernel/mac80211/files/lib/wifi/mac80211.sh
